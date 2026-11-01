@@ -1,8 +1,8 @@
-# Free HTML coworking website template with GSAP scroll animations
+# Free HTML coworking website template with scroll animations and no libraries
 
-Coworking website template: a one-page site for a coworking space whose floors differ by noise, with a weekday schedule, house rules, member profiles, three priced plans and a tour request form. Nested colour bands, like contour lines, mark each level in orange, blue and violet. It is one HTML file with an AGENTS.md, so Claude Code, Cursor or Codex can adapt it to your own space.
+Coworking website template: a one-page site for a coworking space whose floors differ by noise, with a weekday schedule, house rules, member profiles, three priced plans and a tour request form. Nested colour bands, like contour lines, mark each level in orange, blue and violet. Its scroll motion runs on CSS with no libraries, in one file of about 53 KB gzipped that Claude Code, Cursor or Codex can adapt.
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE) ![one HTML file: no build](https://img.shields.io/badge/one%20HTML%20file-no%20build-orange) ![GSAP: ScrollTrigger](https://img.shields.io/badge/GSAP-ScrollTrigger-88ce02)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE) ![one HTML file: no build](https://img.shields.io/badge/one%20HTML%20file-no%20build-orange) ![dependencies: none](https://img.shields.io/badge/dependencies-none-brightgreen)
 
 **[Live demo](https://8bsite.github.io/coworking-website-template/)** · **[Use this template](https://github.com/new?template_name=coworking-website-template&template_owner=8bsite)** · **[Download ZIP](https://github.com/8bsite/coworking-website-template/archive/refs/heads/main.zip)** · **[Template page on 8b.com](https://8b.com/templates/isoline/)**
 
@@ -24,17 +24,17 @@ curl -LO https://raw.githubusercontent.com/8bsite/coworking-website-template/mai
 Then fill in the angle brackets and give your agent this prompt:
 
 ```text
-Read AGENTS.md, then edit index.html. Turn it into the site for <my workspace: name, city and address, the levels or zones with the sound rule of each, opening hours, day pass and membership prices with currency and what each includes, weekly events, how people book or ask for a tour>. Replace first the brand name in any letter case, the level names, the four rooms and the plan prices. Keep the section ids, the data-8b-section and data-8b-motion attributes, the classes AGENTS.md lists and the footer wordmark's --len set to its character count. Ask me for any missing fact and never invent prices, hours, addresses, member quotes, events or contacts.
+Read AGENTS.md, then edit index.html. Make it the site for <my workspace: name, city and address, the levels with the sound rule of each, opening hours, day pass and membership prices with currency, weekly events, how people book a tour>. Replace first the brand name, the level names, the four rooms and the plan prices. Motion is CSS scroll-driven animation plus the inline motion kit: keep the gate script in the head, the section ids, the data-8b-section, data-8b-motion, data-8b-split and data-8b-items attributes, m-well__band on every band group; set the footer wordmark's --len to its length; add no animation library. Never invent prices, hours or contacts; ask me.
 ```
 
-Hand the file to Claude Code, Cursor or Codex and let the vibe coding start with questions: the agent needs the address, phone and hours, what each plan costs and in which currency, and how many seats, carrels or booths exist. It must invent none of it. The demo shows euro prices beside a Leeds address, so settle on one currency. Rename the brand in any letter case, set the footer wordmark's --len to the new name's length and rewrite the three level rules. Keep the ids, the data-8b-section and data-8b-motion attributes and the classes AGENTS.md lists. A redrawn colour field keeps m-well__band on each band group, with --well-d from 0 at the rim to 1 at the core.
+As a coworking website template for Claude Code, Cursor or Codex it suits vibe coding that starts with questions: the agent needs the address, phone and hours, what each plan costs and in which currency, and how many seats, carrels or booths exist. It must invent none of it. The demo shows euro prices beside a Leeds address, so settle on one currency. Rename the brand in any letter case, set the footer wordmark's --len to the new name's length and rewrite the three level rules. Keep the ids, the data-8b-section and data-8b-motion attributes and the classes AGENTS.md lists. A redrawn colour field keeps m-well__band on each band group.
 
 No agent? Click **[Use this template](https://github.com/new?template_name=coworking-website-template&template_owner=8bsite)**, edit `index.html` on GitHub and turn on **Settings > Pages**.
 
 ## Sections and motion
 
 - **Navigation**: top bar: wordmark, section links, Book a day button; phone menu overlay.
-- **Work at your own depth.**: two screens: headline over a huge colour field with a figure on its edge, then a statement and three anchors on the field's colour. Smooth scrolling runs page-wide. The bands breathe on a loop; on scroll they swell until deep blue fills the screen, the figure shrinking into the field.
+- **Work at your own depth.**: two screens: headline over a huge colour field with a figure on its edge, then a statement and three anchors on the field's colour. Mouse wheel scrolling is smoothed page-wide. On load the bands unfold and then breathe on a loop; tied to scroll, they swell around the core until deep blue fills the screen, the figure shrinking into the field.
 - **Three depths. Pick one each morning.**: three hanging posters, one per zone or level, each with its own colour field, photo and caption (demo: the three floors). Section headings rise line by line throughout. Tied to scroll, the three posters lower on their wires and swing as their bands appear.
 - **The building has a day of its own.**: daily schedule beside a sticky colour dial (demo: a weekday from 7:30 to 21:00). As you read the schedule, the sticky dial's bands shift by depth and turn orange, blue, violet, then orange; other rows dim.
 - **Rooms, in order of descent.**: list of rooms indented by level, each with a small hanging photo. Each small print swings on its clips and settles with an elastic bounce as it scrolls into view.
@@ -70,12 +70,12 @@ No. As shipped, it checks that the name is filled and the email looks like an ad
 **Can this coworking website template take payments or bookings?**  
 No. There is no checkout, availability calendar or member login. The Book a day button in the bar and the Book a day pass button on the first screen link to the plans section, while the three plan buttons and the Save a seat links go to the visit section. Point each at your booking tool or checkout address.
 
-**Will it suit a quiet study space or a writers' room on a single floor?**  
-Yes, with edits. The three levels are plain text and three colour pairs, so they can become zones in one room, such as a hot desk area, a quiet corner and booths. The day schedule can have more or fewer rows than the demo's seven. The grid is built for three posters, three plans and four rooms, so rewrite those in place.
+**Is there a coworking website design prompt I can paste into an AI tool?**  
+Yes, a full one sits below on this page. Paste it into Lovable, v0 or Bolt to build from scratch, or into Claude Code, Codex or Cursor; Base44 can take [the demo address as a starting point](https://8b.com/templates/for-base44/). To start from this file instead, put index.html and AGENTS.md in a new folder, open it in the agent and paste the short prompt. Pass the files, not a link.
 
 ## Is it the right base?
 
-It is the right base when what you sell is how each part of the building sounds, for example a roof for calls, a long room for low voices and sealed booths for silence. If your members come for the programme and the people more than for the desks, the [members' club](https://8b.com/templates/softlife/) template is a closer base, and one open room with a single price list needs less than this page carries. Where it is thin is booking: as a coworking space website template it offers a tour request form and buttons you point elsewhere, with no availability calendar, checkout or member login.
+Choose it when you sell how each floor sounds: a roof for calls, a long room for low voices, sealed booths for silence. This is the light build, with the same look and scroll behaviour, no animation library and no script from a CDN: about 53 KB of code gzipped in one file, against 98 KB and four extra requests for the GSAP version. For a programme-led club, the [members' club](https://8b.com/templates/softlife/) template is closer. Booking is thin: as a coworking space website template it offers a tour request form and buttons you point elsewhere, with no availability calendar, checkout or member login.
 
 ## Before you publish
 
@@ -84,7 +84,9 @@ It is the right base when what you sell is how each part of the building sounds,
 
 ## Tech
 
-GSAP 3.13.0, ScrollTrigger, SplitText, Lenis 1.3.27 from jsDelivr, 153 KB, no build step. Chrome and Edge 111+, Safari 16.2+, Firefox 113+ (it uses color-mix(), cascade layers). With "reduce motion" on, the page is complete and still.
+No JavaScript libraries: CSS scroll-driven animations and a small inline motion script with its own smooth wheel scrolling, 188 KB, no build step. Chrome and Edge 111+, Safari 16.2+, Firefox 113+ (it uses color-mix(), cascade layers). Without scroll-driven animations (Firefox today) the scroll motion and the smooth wheel are off and each section shows its finished layout, while any load-in or looping animation still plays; with "reduce motion" on, the page is complete and nothing moves on its own (hover effects stay).
+
+A GSAP build of the same page is [`index.gsap.html`](index.gsap.html): GSAP 3.13.0, ScrollTrigger, SplitText, Lenis 1.3.27 from jsDelivr, 154 KB; its scroll motion also plays in Firefox. Use one of the two files.
 
 ## License
 
